@@ -2,9 +2,9 @@ import requests
 from twilio.rest import Client
 
 OWM_Endpoint= "https://api.openweathermap.org/data/2.5/forecast"
-api_key= "4d7e3848f2437390bee5d9e879880058"
-account_sid = "ACf102806b953d794efd128d16dfc0aa33"
-auth_token = "e06fc9519a288eb8dd04cd1c56ae3dfe"
+api_key= ""
+account_sid = ""
+auth_token = ""
 weather_params={
     "lat": 23.445110,
     "lon": 88.311493,
@@ -29,7 +29,7 @@ if will_rain:
                .create(
         body="Hare Krishna! It's going to rain today.\n Remember to bring an ☔",
         from_='+18569256960',
-        to='+91 9749146281'
+        to=''
     ))
     print(message.status)
 else:
@@ -38,6 +38,6 @@ else:
     .create(
         body="Hare Krishna! Good Morning! Its a Sunnyday!🌄🌅😎",
         from_='+18569256960',
-        to='+91 9749146281'
+        to=''
     ))
     print(message.status)
